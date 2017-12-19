@@ -70,6 +70,7 @@ header{
     /* obrazek jako tło, bez powielania (zawsze tylko 1 obrazek), w środku */
     /* list-style-type: none; */
 }
+/* Navigation Start  */
 nav{
     float: right;
     padding: 25px 20px 0 0;
@@ -79,7 +80,7 @@ nav{
   display: hidden;
   width: 40px;
   height: 40px;
-  background: url(img.nav.png) center;
+  background: url("img/nav.png") center;
 }
 a:hover#menu-icon{
   border-radius: 4px 4px 0 0;
@@ -245,4 +246,78 @@ footer.socket{
 footer.socket p{
   padding: 5px 0 9px 0;
   text-align: center;
+}
+
+/*------ MEDIA QUERIES ---------------------*/
+@media screen and (max-width: 768px){
+  h2{
+    font-size:150%;
+  }
+  h3{
+    font-size: 125%;
+  }
+  p{
+    font-size: 120%;
+  }
+  header{
+    position: absolute;
+    /*ważne do pozycjonowania mniejszego headeru*/
+  }
+  #logo{
+    /*margin: : 15px 0 20px -25px;
+    background:  url("img_new/Pananimals_logo1.png") no-repeat center;*/
+  }
+  #menu-icon{
+    display: inline-block;
+    /*display: block;*/
+  }
+  nav ul, nav:active ul {
+    display: none;
+    z-index: 1000;
+    /*   z-index wysoki -> że bardzo ważny styl, ma być wyświetlany na wierzchu wszystkiego*/
+    position: absolute;
+    padding: 20px;
+    background: #6991ac;
+    right: 20px;
+    top: 60px;
+    border: 1px solid #fff;
+    border-radius: 8px 0 8px 2px;
+    /* border-radius -> do zaokrąglania rogów */
+    width: 40%;
+  }
+  nav:hover ul {
+    display: block;
+  }
+  nav li{
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .banner{
+    padding-top: 86px;
+    /* 86px - żeby pod headerem się zaczynał (bo header jest tu absolute) */
+  }
+  .div4{
+  /*float: left;*/
+    width: 100%;
+  }
+  .div4 i{
+    font-size: 350%;
+    padding: 4% 0 0 0;
+  }
+  article{
+    width: 100%;
+  }
+  aside{
+    width: 100%;
+  }
+  .hand-mobile{
+    display: none;
+  }
+  .div3{
+    width: 100%;
+  }
+  .follow1 i{
+    font-size: 200%;
+  }
 }
