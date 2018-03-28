@@ -55,7 +55,7 @@ header{
 }
 
 #header-inner{
-    max-width: 1200;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -83,7 +83,7 @@ nav{
   background: url("img/nav.png") center;
 }
 a:hover#menu-icon{
-  border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 4px;
 }
 ul{
   list-style-type: none;
@@ -93,7 +93,7 @@ nav ul li{
   font-size: 150%;
   display: inline-block;
   float: left;
-  padding: 10px;
+  margin: 10px;
 }
 nav ul li a{
   color: #f5f5f5;
@@ -124,16 +124,16 @@ nav ul li a:hover{
 }
 
 #html{
-  background-color: #f1aa90;
+  background-color: #a2b2c1;
 }
 #css{
-  background-color: #beb9ad;
+  background-color:#beb9ad;
 }
 #design{
-  background-color: #aadcd2;
+  background-color: #f1aa90;
 }
 #social{
-  background-color: #a2b2c1;
+  background-color: #aadcd2;
 }
 
 .div4 i{
@@ -277,7 +277,8 @@ footer.socket p{
     /*   z-index wysoki -> że bardzo ważny styl, ma być wyświetlany na wierzchu wszystkiego*/
     position: absolute;
     padding: 20px;
-    background: #6991ac;
+    background: rgba(105, 145, 172, 0.85);//#6991ac;
+    /* opacity: 0.9; - Transparency, rgbA - A for transparency too */
     right: 20px;
     top: 60px;
     border: 1px solid #fff;
@@ -319,5 +320,6 @@ footer.socket p{
   }
   .follow1 i{
     font-size: 200%;
+    padding: 5% 8% 5% 8%;
   }
 }
